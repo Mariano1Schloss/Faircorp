@@ -27,14 +27,14 @@ class WindowDaoTest {
         Assertions.assertThat(window.getName()).isEqualTo("Window 1");
         Assertions.assertThat(window.getWindowStatus()).isEqualTo(WindowStatus.CLOSED);
     }
-    @Test
+   /* @Test
     public void shouldFindRoomOpenWindows() {
         List<Window> result = windowDao.findRoomOpenWindows(-7L);
         Assertions.assertThat(result)
                 .hasSize(1)
                 .extracting("id", "windowStatus")
                 .containsExactly(Tuple.tuple(-8L, WindowStatus.CLOSED));
-    }
+    }*/
 
     @Test
     public void shouldNotFindRoomOpenWindows() {
