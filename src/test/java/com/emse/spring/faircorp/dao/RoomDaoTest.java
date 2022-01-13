@@ -17,7 +17,7 @@ class RoomDaoTest {
 
     @Test
     public void shouldFindARoom() {
-        Room room2 = roomDao.getById(-9L);
-        Assertions.assertThat(room2.getName()).isEqualTo("Room2");
+        Room room2 = roomDao.getById(-4L);
+        Assertions.assertThat(room2.getName()).isEqualTo("Toilettes");
     }
 }
